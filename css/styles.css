@@ -1,0 +1,241 @@
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0F172A;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.content-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.hero-section {
+    color: #fff;
+    padding: 100px 20px;
+    text-align: left;
+}
+
+.hero-section p {
+    margin: 5px 0;
+    color: #94A3B8;
+    text-align: justify;
+}
+
+.hero-section h1 {
+    margin: 5px 0;
+    font-size: 40px;
+}
+
+.about-section {
+    color: #94A3B8;
+    float: right;
+    width: 50%;
+    padding: 68px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    line-height: 1.8;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.about-section strong {
+    color: white;
+}
+
+.about-section * {
+    color: inherit;
+}
+
+.light-effect {
+    position: fixed;
+    background: radial-gradient(circle, #0F172A, rgba(114, 72, 72, 0));
+    border-radius: 50%;
+    width: 30px; 
+    height: 30px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.20s ease-out;
+    box-shadow: 0 0 700px rgb(62, 76, 112); 
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 20%;
+    margin-top: -156px; 
+
+}
+.nav-item {
+    display: flex;
+}
+
+.nav-item::before {
+    content: '';
+    width: 2px; 
+    height: 20px; 
+    background-color: white;
+    margin-right: 10px; 
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #94A3B8;
+    font-size: 16px;
+    font-weight: normal; 
+    transition: font-weight 0.3s ease-out;
+    font-size: 14px;
+}
+
+.nav-item:hover a {
+    font-weight: bold; 
+    color: white;
+}
+
+
+.social-section {
+    margin-top: 10px;
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+
+}
+
+.social-list li {
+    margin-right: 30px;
+    color: white;
+}
+
+.social-list a {
+    text-decoration: none;
+    color: #94A3B8;
+    font-size: 16px;
+    transition: color 0.3s ease-out;
+}
+
+.social-list a:hover {
+    color: white;
+}
+
+.footer-section {
+    width: 50%;
+    float: right;
+    color: #94A3B8;
+    font-size: 14px;
+    margin-right: -29px;
+
+}
+
+
+.experience-section {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.experience-item {
+    background-color: #09122c;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    width: 40%; 
+    margin-right: 69px;
+    display: flex;
+    flex-direction: column; 
+    transition: background-color 0.3s ease; 
+}
+
+.experience-item:hover {
+    background-color: #23354e;
+}
+
+.experience-item .job-info {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 10px; 
+}
+
+.experience-item .job-info .job-date {
+    color: #94A3B8;
+    font-size: 14px;
+    margin-right: 10px; 
+}
+
+.experience-item .job-info h3 {
+    margin: 0; 
+    color: white;
+    font-weight: normal;
+}
+
+.experience-item .job-details {
+    flex: 1; 
+}
+
+.experience-item .job-title {
+    color: #94A3B8;
+    margin-left: 109px;
+    margin-top: -8px;
+}
+
+.experience-item .job-description {
+    color: #94A3B8;
+    margin-bottom: 15px;
+    margin-left: 109px;
+}
+
+.experience-item .technologies ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    margin-left: 109px;
+}
+
+.experience-item .technologies li {
+    padding: 5px 10px;
+    border-radius: 40%;
+    background: linear-gradient(to right, #285F63, #535b6d); 
+    font-size: 11px;
+}
+
+
+
+
+.resume-link {
+    display: inline-block;
+    color: #fff; 
+    padding: 10px;
+    text-decoration: none; 
+    border-radius: 50px; 
+    transition: background-color 0.3s ease; 
+}
+
+.resume-link:hover {
+    background-color: #23354e;
+}
+
+
+
+
