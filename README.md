@@ -1,4 +1,4 @@
-# Mariama Tamba's Portfolio
+# Mariama Tamba Portfolio
 
 Welcome to my portfolio!
 
