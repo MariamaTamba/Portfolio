@@ -23,6 +23,7 @@ body {
     text-align: left;
 }
 
+
 .hero-section p {
     margin: 5px 0;
     color: #94A3B8;
@@ -66,48 +67,6 @@ body {
     opacity: 0;
     transition: opacity 0.20s ease-out;
     box-shadow: 0 0 700px rgb(62, 76, 112); 
-}
-
-.navbar {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    width: 20%;
-    margin-top: -156px; 
-
-}
-.nav-item {
-    display: flex;
-}
-
-.nav-item::before {
-    content: '';
-    width: 2px; 
-    height: 20px; 
-    background-color: white;
-    margin-right: 10px; 
-}
-
-.nav-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 30px;
-
-}
-
-.nav-item a {
-    text-decoration: none;
-    color: #94A3B8;
-    font-size: 16px;
-    font-weight: normal; 
-    transition: font-weight 0.3s ease-out;
-    font-size: 14px;
-}
-
-.nav-item:hover a {
-    font-weight: bold; 
-    color: white;
 }
 
 
@@ -211,6 +170,7 @@ body {
     display: flex;
     gap: 10px;
     margin-left: 109px;
+    flex-wrap: wrap;
 }
 
 .experience-item .technologies li {
@@ -220,6 +180,10 @@ body {
     font-size: 11px;
 }
 
+.experience-item .technologies {
+    width: 100%;
+    overflow: hidden;
+}
 
 
 
@@ -235,7 +199,6 @@ body {
 .resume-link:hover {
     background-color: #23354e;
 }
-
 
 
 
