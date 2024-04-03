@@ -59,14 +59,14 @@ body {
     position: fixed;
     background: radial-gradient(circle, #0F172A, rgba(114, 72, 72, 0));
     border-radius: 50%;
-    width: 30px; 
-    height: 30px;
+    width: 130px;
+    height: 130px;
     transform: translate(-50%, -50%);
     pointer-events: none;
     z-index: -1;
     opacity: 0;
     transition: opacity 0.20s ease-out;
-    box-shadow: 0 0 700px rgb(62, 76, 112); 
+    box-shadow: 0 0 700px rgb(62, 76, 112);
 }
 
 
@@ -118,11 +118,11 @@ body {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    width: 40%; 
+    width: 40%;
     margin-right: 69px;
     display: flex;
-    flex-direction: column; 
-    transition: background-color 0.3s ease; 
+    flex-direction: column;
+    transition: background-color 0.3s ease;
 }
 
 .experience-item:hover {
@@ -132,23 +132,23 @@ body {
 .experience-item .job-info {
     display: flex;
     align-items: baseline;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 .experience-item .job-info .job-date {
     color: #94A3B8;
     font-size: 14px;
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
 .experience-item .job-info h3 {
-    margin: 0; 
+    margin: 0;
     color: white;
     font-weight: normal;
 }
 
 .experience-item .job-details {
-    flex: 1; 
+    flex: 1;
 }
 
 .experience-item .job-title {
@@ -176,7 +176,7 @@ body {
 .experience-item .technologies li {
     padding: 5px 10px;
     border-radius: 40%;
-    background: linear-gradient(to right, #285F63, #535b6d); 
+    background: linear-gradient(to right, #285F63, #535b6d);
     font-size: 11px;
 }
 
@@ -186,19 +186,15 @@ body {
 }
 
 
-
 .resume-link {
     display: inline-block;
-    color: #fff; 
+    color: #fff;
     padding: 10px;
-    text-decoration: none; 
-    border-radius: 50px; 
-    transition: background-color 0.3s ease; 
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
 }
 
 .resume-link:hover {
-    background-color: #23354e;
+    background-color: #334257;
 }
-
-
-
