@@ -1,5 +1,5 @@
 body {
-    font-family: 'Inter', sans-serif;    
+    font-family: 'Inter', sans-serif;
     line-height: 1.6;
     background-color: #0F172A;
 }
@@ -13,19 +13,36 @@ body {
 
 .content-container {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .hero-section {
     color: #fff;
+    text-align: left;
+    padding: 100px 0;
+    margin-top: -76px;
+    align-self: flex-start;
+    position: fixed;
+}
+
+.hero-section h2 {
+    font-size: 20px;
+    margin-top: -10px;
+
 }
 
 .hero-section p {
-    color: #94A3B8;  
+    color: #94A3B8;
 }
 
 .hero-section h1 {
     font-size: 40px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .about-section {
@@ -33,81 +50,105 @@ body {
     padding: 55px;
     box-sizing: border-box;
     color: #94A3B8;
+    max-width: 600px;
+    align-self: flex-end;
+
 }
 
-.social-list li {
-    margin-right: 15px; 
+.experience-section {
+    flex: 1;
+    padding: 55px;
+    box-sizing: border-box;
+    max-width: 600px;
+    align-self: flex-end;
+}
+
+.experience-item {
+    border-radius: 8px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 20px;
+    background-color: #1E293B;
+}
+
+.experience-item:hover {
+    background-color: #23354e;
+    transform: translateY(-8px);
+}
+
+
+.job-info {
+    display: flex;
+    align-items: center;
+}
+
+.job-info .job-date {
+    color: #94A3B8;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.job-info h3 {
+    color: white;
+}
+
+.job-title {
+    color: #94A3B8;
+}
+
+.job-description {
+    color: #94A3B8;
+}
+
+.technologies ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+}
+
+.technologies li {
+    padding: 5px 10px;
+    border-radius: 30%;
+    background: linear-gradient(to right, #1931bd8a, #82918e);
+    font-size: 12px;
     color: white;
 }
 
 .social-list {
     list-style: none;
     display: flex;
+    margin-left: -38px;
+    margin-top: 500px;
+}
 
+.social-list li {
+    margin-right: 15px;
+    color: white;
 }
 
 .social-list a {
     text-decoration: none;
     color: #94A3B8;
-    font-size: 16px;
-    transition: color 0.3s ease-out;
+    font-size: 25px;
+
 }
 
-.experience-item {
-    border-radius: 8px;
-    width: 50%;
-    margin-right: 69px;
-    display: flex;
-    flex-direction: column;
-}
-
-.experience-item:hover {
-    background-color: #23354e;
-}
- 
-
-.experience-item .job-info .job-date {
-    color: #94A3B8;
-    font-size: 12px;
-    margin-right: 10px;
-}
-
-.experience-item .job-info h3 {
-    color: white;
-   
-}
-
-
-.experience-item .job-title {
-    color: #94A3B8;
- 
-}
-
-.experience-item .job-description {
-    color: #94A3B8;
- 
-}
-
-.experience-item .technologies ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.experience-item .technologies li {
-    padding: 5px 10px;
-    border-radius: 30%;
-    background: linear-gradient(to right, #5164d18a, #5be4cf);
-    font-size: 12px;
-}
-
-
-
-.footer-section p{
+.social-list a:hover {
     color: white;
 }
 
+.footer-section {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-section p {
+    color: white;
+}
 
 .resume-link {
     display: inline-block;
@@ -117,35 +158,52 @@ body {
     transition: background-color 0.3s ease;
 }
 
-
-
-
 @media only screen and (max-width: 968px) {
     .hero-section {
-        padding: 60px 20px; 
+        padding: 60px 20px;
     }
 
-    .hero-section h1 {
-        font-size: 30px;
-    }
-
-    .about-section {
-        flex-basis: 100%; 
-        margin-top: -98px; 
-        margin-left: -65px;
-        font-size: 12px;
+    .about-section,
+    .experience-section {
+        flex-basis: 100%;
+        padding: 20px;
+        align-self: auto;
     }
 
     .experience-item {
-        width: 100%; 
-        margin-right: 0;
-    }
-
-    .social-section {
-        margin-top: 20px; 
+        width: 100%;
     }
 
     .social-list li {
-        margin-right: 10px; 
+        margin-right: 10px;
     }
+
+}
+
+.nav-section {
+    background-color: #0F172A;
+}
+
+.nav-section ul {
+    list-style: none;
+    padding: 20px 0;
+}
+
+.nav-section li {
+    margin: 0 15px;
+}
+
+.nav-section a {
+    text-decoration: none;
+    color: #94A3B8;
+    font-size: 12px;
+    font-weight: bold;
+    transition: color 0.3s ease-out; /* Agrega una transición de color */
+}
+
+.nav-section a:hover {
+    color: #FFFFFF;
+}
+.resume{
+    list-style: none;
 }

@@ -1,15 +1,11 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const lightEffect = document.querySelector('.light-effect');
+const sections = document.querySelectorAll('.section');
 
-    document.addEventListener('mousemove', (e) => {
-        const mouseX = e.clientX;
-        const mouseY = e.clientY;
-
-        lightEffect.style.opacity = '0.8';
-        lightEffect.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
+sections.forEach(section => {
+    section.addEventListener('mouseenter', () => {
+        section.style.transform = 'translateY(-10px)';
     });
 
-    document.addEventListener('mouseout', () => {
-        lightEffect.style.opacity = '0';
+    section.addEventListener('mouseleave', () => {
+        section.style.transform = 'translateY(0)';
     });
 });
