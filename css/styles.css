@@ -1,27 +1,8 @@
 body {
-    margin: 0;
-    padding: 0;
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     background-color: #0F172A;
-    height: 100%;
-    width: 100%;
 }
-
-.cursor-light {
-    position: fixed;
-    top: -100px; /* Ajusta la posición inicial según sea necesario */
-    left: -100px; /* Ajusta la posición inicial según sea necesario */
-    width: 600px; /* Ajusta el ancho de la bola de luz */
-    height: 600px; /* Ajusta la altura de la bola de luz */
-    background: rgba(60, 60, 126, 0.1); /* Color azulado con opacidad */
-    border-radius: 40% 20% 40% 30%; /* Ajusta el border-radius para una forma más irregular */
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transition: transform 0.1s ease-out;
-    box-shadow: 0 0 50px 50px rgba(60, 60, 126, 0.1); /* Ajusta el box-shadow */
-}
-
 
 .container {
     margin: 0 auto;
@@ -47,6 +28,7 @@ body {
 .hero-section h2 {
     font-size: 20px;
     margin-top: -10px;
+
 }
 
 .hero-section p {
@@ -70,6 +52,7 @@ body {
     color: #94A3B8;
     max-width: 600px;
     align-self: flex-end;
+
 }
 
 .experience-section {
@@ -94,6 +77,7 @@ body {
     background-color: #23354e;
     transform: translateY(-8px);
 }
+
 
 .job-info {
     display: flex;
@@ -150,6 +134,7 @@ body {
     text-decoration: none;
     color: #94A3B8;
     font-size: 25px;
+
 }
 
 .social-list a:hover {
@@ -192,8 +177,12 @@ body {
     .social-list li {
         margin-right: 10px;
     }
+
 }
 
+.nav-section {
+    background-color: #0F172A;
+}
 
 .nav-section ul {
     list-style: none;
@@ -215,7 +204,6 @@ body {
 .nav-section a:hover {
     color: #FFFFFF;
 }
-
-.resume {
+.resume{
     list-style: none;
 }
